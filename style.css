@@ -1,0 +1,278 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #0056b3;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.donate-btn {
+  background: #ffc107;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.donate-btn:hover {
+  background: #ffca28;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero-section {
+  background: url("https://www.3ieimpact.org/sites/default/files/Breakthrough.jpg")
+    no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  z-index: 1;
+}
+
+.hero-content {
+  z-index: 2;
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-btn {
+  background: #ffc107;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  color: #333;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+  background: #ffca28;
+  transform: scale(1.05);
+}
+
+.learn-btn {
+  background: #0056b3;
+  color: white;
+}
+
+.learn-btn:hover {
+  background: #0073e6;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item h2 {
+  font-size: 2rem;
+  color: #ffc107;
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Introduction Section */
+.intro-section {
+  padding: 2rem;
+  text-align: center;
+  background: #f8f9fa;
+}
+
+.intro-section h2 {
+  margin-bottom: 1rem;
+}
+
+/* Services Section */
+.services-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  width: 300px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.service-card p {
+  padding: 0 1rem 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.team-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.team-section h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+.team-section p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+}
+.team-members {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.team-member {
+  flex: 1 1 300px;
+  max-width: 300px;
+  margin: 15px;
+  text-align: center;
+}
+.team-member img {
+  width: 100%;
+  border-radius: 5%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+.team-member h3 {
+  margin: 15px 0 5px;
+  color: #333;
+}
+.team-member p {
+  color: #777;
+}
+.donate-button {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.donate-button:hover {
+  background: #0056b3;
+}
+@media (max-width: 768px) {
+  .team-member {
+    flex: 1 1 100%;
+  }
+}
