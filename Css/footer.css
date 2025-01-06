@@ -1,0 +1,95 @@
+/* Footer Section */
+.footer {
+  background-color: #f9fafb; /* bg-gray-50 */
+  color: #4a5568; /* gray-600 */
+  padding: 1rem 1rem;
+  margin: 3rem 0 0 0;
+}
+
+/* Footer Content */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-icon {
+  font-size: 2rem;
+  color: #319795; /* teal-500 */
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d3748; /* navy-800 */
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #4a5568; /* gray-600 */
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #319795; /* teal-500 */
+}
+
+.footer-social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.footer-social-links i {
+  font-size: 1.5rem;
+}
+
+.social-link {
+  color: #4a5568; /* gray-600 */
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: #319795; /* teal-500 */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid #e2e8f0; /* gray-200 */
+  padding-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

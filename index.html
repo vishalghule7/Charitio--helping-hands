@@ -3,143 +3,464 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NGO Website</title>
+    <title>Charitio - Charity Website</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <header>
-      <nav class="navbar">
-        <div class="logo">Helping Hands</div>
+    <header class="header">
+      <nav class="nav-container">
+        <div class="logo">
+          <img
+            src="https://seeklogo.com/images/H/hand-heart-logo-C564DAB0BB-seeklogo.com.png"
+            alt=""
+            style="width: 40px; height: 40px; border-radius: 10%"
+          />
+          <span>Charitio</span>
+        </div>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Campaigns</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
         <button class="donate-btn">Donate Now</button>
       </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-      <div class="hero-overlay">
-        <div class="hero-content">
-          <h1>Making the World a Better Place</h1>
-          <p>Join us in our mission to help people, animals, and the planet.</p>
-          <div class="cta-buttons">
-            <button class="hero-btn donate-btn">Donate Now</button>
-            <button class="hero-btn learn-btn">Learn More</button>
+    <main>
+      <section class="hero">
+        <div class="hero-slider">
+          <div class="slides">
+            <div class="slide active">
+              <img
+                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&auto=format&fit=crop&q=80"
+                alt="Children education"
+              />
+              <div class="slide-overlay"></div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1200&auto=format&fit=crop&q=80"
+                alt="Community support"
+              />
+              <div class="slide-overlay"></div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=1200&auto=format&fit=crop&q=80"
+                alt="Happy children"
+              />
+              <div class="slide-overlay"></div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=1200&auto=format&fit=crop&q=80"
+                alt="Helping hands"
+              />
+              <div class="slide-overlay"></div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1604881991720-f91add269bed?w=1200&auto=format&fit=crop&q=80"
+                alt="Food distribution"
+              />
+              <div class="slide-overlay"></div>
+            </div>
           </div>
-          <div class="hero-stats">
-            <div class="stat-item">
-              <h2>10,000+</h2>
-              <p>Lives Touched</p>
+
+          <div class="slider-controls">
+            <button class="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="slider-dots"></div>
+            <button class="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1 class="hero-title">Help Those In Needs</h1>
+            <h2 class="hero-subtitle">Your Mercy Can Change Someone's Life</h2>
+            <p class="hero-text">
+              We help local nonprofits access the funding, tools, training, and
+              support they need
+            </p>
+            <button class="get-started-btn">Supports Us</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="services-container">
+          <div class="services-grid">
+            <div class="service-card">
+              <img
+                src="https://cdn-icons-gif.flaticon.com/12817/12817672.gif"
+                alt="Healthy Food"
+                class="service-icon"
+              />
+              <h3 class="service-title">Healthy Food</h3>
             </div>
-            <div class="stat-item">
-              <h2>500+</h2>
-              <p>Animals Rescued</p>
+            <div class="service-card">
+              <img
+                src="https://cdn-icons-gif.flaticon.com/17862/17862487.gif"
+                alt="Free Clothes"
+                class="service-icon"
+              />
+              <h3 class="service-title">Free Clothes</h3>
             </div>
-            <div class="stat-item">
-              <h2>50+</h2>
-              <p>Environmental Projects</p>
+            <div class="service-card">
+              <img
+                src="https://cdn-icons-gif.flaticon.com/17862/17862496.gif"
+                alt="Medical Care"
+                class="service-icon"
+              />
+              <h3 class="service-title">Medical Care</h3>
+            </div>
+            <div class="service-card">
+              <img
+                src="https://cdn-icons-gif.flaticon.com/17770/17770991.gif"
+                alt="Clean Environment"
+                class="service-icon"
+              />
+              <h3 class="service-title">Clean Environment</h3>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Introduction Section -->
-    <section id="about" class="intro-section">
-      <h2>About Our NGO</h2>
-      <p>
-        We strive to make a positive impact on society by helping those in need.
-        Our initiatives focus on supporting poor people, rescuing animals, and
-        protecting the environment.
-      </p>
-    </section>
+      <section class="about">
+        <div class="about-container">
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1542810634-71277d95dcbb"
+              alt="Happy child"
+            />
+            <div class="raised-card">
+              <div>Total Raised</div>
+              <div>$25000</div>
+            </div>
+          </div>
+          <div class="about-content">
+            <p class="section-tag">About Us</p>
+            <h2 class="section-title">
+              We Can Save More Lives With Your Helping Hand.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul class="about-list">
+              <li>The standard chunk of Lorem Ipsum used since</li>
+              <li>
+                Randomised words which don't look even slightly believable
+              </li>
+              <li>Making this the first true generator on the Internet</li>
+            </ul>
+            <button class="more-about-btn">More About</button>
+          </div>
+        </div>
+      </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-      <h2>Our Initiatives</h2>
-      <div class="services-container">
-        <div class="service-card">
-          <img
-            src="https://cdn.pixabay.com/photo/2021/04/28/04/48/ngo-near-me-6212979_640.jpg"
-            alt="Helping People"
-          />
-          <h3>Helping People</h3>
-          <p>Providing resources and support to those in need.</p>
-        </div>
-        <div class="service-card">
-          <img
-            src="https://cdn.pixabay.com/photo/2021/04/28/04/48/ngo-near-me-6212979_640.jpg"
-            alt="Helping Animals"
-          />
-          <h3>Animal Rescue</h3>
-          <p>Rescuing and caring for injured or abandoned animals.</p>
-        </div>
-        <div class="service-card">
-          <img
-            src="https://cdn.pixabay.com/photo/2021/04/28/04/48/ngo-near-me-6212979_640.jpg"
-            alt="Protecting Environment"
-          />
-          <h3>Environment Protection</h3>
-          <p>Promoting sustainable practices to protect our planet.</p>
-        </div>
-      </div>
-    </section>
+      <section class="campaigns">
+        <div class="campaigns-container">
+          <p class="section-tag">We Love To Help Poor</p>
+          <h2 class="section-title">Our Featured Campaigns</h2>
+          <p>
+            There are many variations of passages of Lorem Ipsum available,
+            but<br />the majority have suffered alteration in some form.
+          </p>
 
-    <div class="team-section">
-      <h1>Meet Our Volunteer Team</h1>
-      <p>
-        There are many variations of passages of Lorem Ipsum available, but the
-        majority have suffered alteration in some form.
-      </p>
-      <div class="team-members">
-        <div class="team-member">
-          <img
-            src="https://th.bing.com/th/id/OIP.WSuYDHIoL3fF7qwx801zhgAAAA?w=270&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"
-            alt="Volunteer 1"
-          />
-          <h3>Laura Faiary</h3>
-          <p>Profile Description</p>
-        </div>
-        <div class="team-member">
-          <img
-            src="https://th.bing.com/th/id/OIP.WSuYDHIoL3fF7qwx801zhgAAAA?w=270&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"
-            alt="Volunteer 1"
-          />
-          <h3>Laura Faiary</h3>
-          <p>Profile Description</p>
-        </div>
-        <div class="team-member">
-          <img
-            src="https://th.bing.com/th/id/OIP.WSuYDHIoL3fF7qwx801zhgAAAA?w=270&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"
-            alt="Volunteer 1"
-          />
-          <h3>Laura Faiary</h3>
-          <p>Profile Description</p>
-        </div>
-        <div class="team-member">
-          <img
-            src="https://th.bing.com/th/id/OIP.WSuYDHIoL3fF7qwx801zhgAAAA?w=270&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"
-            alt="Volunteer 1"
-          />
-          <h3>Laura Faiary</h3>
-          <p>Profile Description</p>
-        </div>
-        <div class="team-member">
-          <img
-            src="https://th.bing.com/th/id/OIP.WSuYDHIoL3fF7qwx801zhgAAAA?w=270&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"
-            alt="Volunteer 1"
-          />
-          <h3>Laura Faiary</h3>
-          <p>Profile Description</p>
-        </div>
-      </div>
+          <div class="campaigns-grid">
+            <div class="campaign-card">
+              <img
+                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c"
+                alt="Education Campaign"
+                class="campaign-image"
+              />
+              <span class="campaign-tag">Education</span>
+              <div class="campaign-content">
+                <h3 class="campaign-title">
+                  Help To Build a Secure Life For Poor Children.
+                </h3>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 65%"></div>
+                </div>
+                <div>Goal: $3,000.00 &nbsp; Raised: $2,000.00</div>
+                <div class="campaign-footer">
+                  <div class="campaign-author">
+                    <img
+                      src="https://i.pravatar.cc/100?img=10"
+                      alt="Laura Faiary"
+                      class="author-avatar"
+                    />
+                    <span>Laura Faiary</span>
+                  </div>
+                  <a class="campaign-donate" href="#">Donate Now</a>
+                </div>
+              </div>
+            </div>
 
-      <a href="#" class="donate-button">Donate Now</a>
-    </div>
+            <div class="campaign-card">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1661770160867-2c3a5092ec3b?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGRvY3RvcnMlMjBpbiUyMG5nb3xlbnwwfHwwfHx8MA%3D%3D"
+                alt="Health Campaign"
+                class="campaign-image"
+              />
+              <span class="campaign-tag">Health</span>
+              <div class="campaign-content">
+                <h3 class="campaign-title">
+                  Provide Medical Aid to Underprivileged Communities.
+                </h3>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 80%"></div>
+                </div>
+                <div>Goal: $5,000.00 &nbsp; Raised: $4,000.00</div>
+                <div class="campaign-footer">
+                  <div class="campaign-author">
+                    <img
+                      src="https://i.pravatar.cc/100?img=12"
+                      alt="John Doe"
+                      class="author-avatar"
+                    />
+                    <span>John Doe</span>
+                  </div>
+                  <a class="campaign-donate" href="#">Donate Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="campaign-card">
+              <img
+                src="https://images.unsplash.com/photo-1641320201668-1b2bedb4a066?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHRyZWUlMjBwbGFudGF0aW9ufGVufDB8fDB8fHww"
+                alt="Environment Campaign"
+                class="campaign-image"
+              />
+              <span class="campaign-tag">Environment</span>
+              <div class="campaign-content">
+                <h3 class="campaign-title">
+                  Join Us in Tree Plantation Drives to Save the Planet.
+                </h3>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 45%"></div>
+                </div>
+                <div>Goal: $10,000.00 &nbsp; Raised: $4,500.00</div>
+                <div class="campaign-footer">
+                  <div class="campaign-author">
+                    <img
+                      src="https://i.pravatar.cc/100?img=20"
+                      alt="Jane Smith"
+                      class="author-avatar"
+                    />
+                    <span>Jane Smith</span>
+                  </div>
+                  <a class="campaign-donate" href="#">Donate Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="campaign-card">
+              <img
+                src="https://images.unsplash.com/photo-1609139003551-ee40f5f73ec0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZCUyMGRpc3RyaWJ1dGlvbnxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Food Distribution Campaign"
+                class="campaign-image"
+              />
+              <span class="campaign-tag">Food</span>
+              <div class="campaign-content">
+                <h3 class="campaign-title">
+                  Distribute Meals to Hungry Families in Need.
+                </h3>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 75%"></div>
+                </div>
+                <div>Goal: $8,000.00 &nbsp; Raised: $6,000.00</div>
+                <div class="campaign-footer">
+                  <div class="campaign-author">
+                    <img
+                      src="https://i.pravatar.cc/100?img=30"
+                      alt="Anna Lee"
+                      class="author-avatar"
+                    />
+                    <span>Anna Lee</span>
+                  </div>
+                  <a class="campaign-donate" href="#">Donate Now</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: Disaster Relief -->
+            <div class="campaign-card">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1717026593062-21c68d86f931?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTd8fFN1cHBvcnQlMjBWaWN0aW1zJTIwb2YlMjBOYXR1cmFsJTIwRGlzYXN0ZXJzfGVufDB8fDB8fHww"
+                alt="Disaster Relief Campaign"
+                class="campaign-image"
+              />
+              <span class="campaign-tag">Relief</span>
+              <div class="campaign-content">
+                <h3 class="campaign-title">
+                  Support Victims of Natural Disasters.
+                </h3>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 60%"></div>
+                </div>
+                <div>Goal: $15,000.00 &nbsp; Raised: $9,000.00</div>
+                <div class="campaign-footer">
+                  <div class="campaign-author">
+                    <img
+                      src="https://i.pravatar.cc/100?img=45"
+                      alt="Michael Doe"
+                      class="author-avatar"
+                    />
+                    <span>Michael Doe</span>
+                  </div>
+                  <a class="campaign-donate" href="#">Donate Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="campaign-card">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1661575227083-65e53e193267?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODR8fHdpbGRsaWZlJTIwcmVzY3VlfGVufDB8fDB8fHww"
+                alt="Wildlife Conservation Campaign"
+                class="campaign-image"
+              />
+              <span class="campaign-tag">Wildlife</span>
+              <div class="campaign-content">
+                <h3 class="campaign-title">
+                  Protect and Rescue Endangered Wildlife.
+                </h3>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 70%"></div>
+                </div>
+                <div>Goal: $15,000.00 &nbsp; Raised: $10,500.00</div>
+                <div class="campaign-footer">
+                  <div class="campaign-author">
+                    <img
+                      src="https://i.pravatar.cc/100?img=34"
+                      alt="Chris Green"
+                      class="author-avatar"
+                    />
+                    <span>Chris Green</span>
+                  </div>
+                  <a class="campaign-donate" href="#">Donate Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section></section>
+
+      <section>
+        <div class="newsletter-section">
+          <div class="newsletter-container">
+            <h3 class="newsletter-title">Subscribe to Our Newsletter</h3>
+            <p class="newsletter-description">
+              Stay updated with our latest campaigns and how you can help.
+            </p>
+            <form class="newsletter-form" action="#" method="POST">
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                class="newsletter-input"
+                required
+              />
+              <button type="submit" class="newsletter-button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-grid">
+            <!-- About -->
+            <div>
+              <div class="footer-brand">
+                <span class="footer-icon">❤️</span>
+                <span class="footer-logo">Charitio</span>
+              </div>
+              <p class="footer-text">
+                We are a non-profit organization dedicated to making a positive
+                impact in the lives of those in need.
+              </p>
+              <div class="footer-social-links">
+                <a href="#" class="social-link"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-youtube"></i
+                ></a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-whatsapp"></i
+                ></a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-telegram"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+              <h3 class="footer-title">Quick Links</h3>
+              <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Causes</a></li>
+                <li><a href="#">Get Involved</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+              <h3 class="footer-title">Contact Info</h3>
+              <address>
+                <p>Wall street</p>
+                <p>Pune, MH 421010</p>
+                <p><a href="tel:+1234567890">+91 234567890</a></p>
+                <p>
+                  <a href="mailto:contact@charitio.org">contact@charitio.org</a>
+                </p>
+              </address>
+            </div>
+
+            <!-- Working Hours -->
+            <div>
+              <h3 class="footer-title">Working Hours</h3>
+              <ul>
+                <li>Monday - Friday: 9:00 AM - 6:00 PM</li>
+                <li>Saturday: 9:00 AM - 4:00 PM</li>
+                <li>Sunday: Closed</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>© 2024 Charitio. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <script type="module" src="script.js"></script>
   </body>
 </html>
