@@ -6,6 +6,9 @@
 @import "css/campaigns.css";
 @import "css/newsletter.css";
 @import "css/footer.css";
+@import "css/team.css";
+@import "css/companySlider.css";
+@import "css/proudPartner.css";
 
 :root {
   --primary-color: #4caf50;

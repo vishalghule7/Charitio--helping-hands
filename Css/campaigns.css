@@ -1,6 +1,6 @@
 /* Campaigns Section */
 .campaigns {
-  padding: 4rem 2rem;
+  padding: 0rem 2rem 4rem 2rem;
   background: var(--background-light);
   text-align: center;
 }

@@ -105,3 +105,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  slidesPerView: 3,
+  spaceBetween: 20,
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});
