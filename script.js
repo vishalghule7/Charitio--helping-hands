@@ -1,13 +1,13 @@
 // Add header scroll effect
-const header = document.querySelector(".header");
+const header1 = document.querySelector(".header");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
-    header.style.background = "rgba(255, 255, 255, 0.85)";
-    header.style.backdropFilter = "blur(10px)";
-    header.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
+    header1.style.background = "rgba(255, 255, 255, 0.85)";
+    header1.style.backdropFilter = "blur(10px)";
+    header1.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
   } else {
-    header.style.background = "var(--background-light)";
-    header.style.backdropFilter = "none";
+    header1.style.background = "var(--background-light)";
+    header1.style.backdropFilter = "none";
   }
 });
 document.addEventListener("DOMContentLoaded", function () {
@@ -122,7 +122,53 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 2,
     },
     1024: {
-      slidesPerView: 4,
+      slidesPerView: 3,
     },
   },
+});
+
+// Mobile Navigation
+const hamburger = document.querySelector(".hamburger");
+const mobileNav = document.querySelector(".mobile-nav");
+const closeNav = document.querySelector(".close-nav");
+const header = document.querySelector(".header");
+
+let lastScroll = 0;
+const scrollThreshold = 10;
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll > lastScroll && currentScroll > scrollThreshold) {
+    header.classList.add("hide");
+  } else {
+    header.classList.remove("hide");
+  }
+
+  lastScroll = currentScroll;
+});
+
+hamburger.addEventListener("click", () => {
+  mobileNav.classList.add("active");
+  document.body.style.overflow = "hidden";
+  hamburger.style.display = "none";
+});
+
+closeNav.addEventListener("click", () => {
+  mobileNav.classList.remove("active");
+  document.body.style.overflow = "";
+  hamburger.style.display = "flex";
+});
+
+// Close mobile nav when clicking outside
+document.addEventListener("click", (e) => {
+  if (
+    mobileNav.classList.contains("active") &&
+    !mobileNav.contains(e.target) &&
+    !hamburger.contains(e.target)
+  ) {
+    mobileNav.classList.remove("active");
+    document.body.style.overflow = "";
+    hamburger.style.display = "flex";
+  }
 });

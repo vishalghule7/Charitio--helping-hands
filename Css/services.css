@@ -24,7 +24,8 @@
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: rgba(3, 3, 3, 0.25) 1px 2px 10px;
 }
 
 .service-card:nth-child(1) {
